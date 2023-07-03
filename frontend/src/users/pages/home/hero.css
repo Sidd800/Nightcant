@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.heronc{
+    background-color: #FFBF74;
+}
+.tobejustifiedtocenter{
+    display: flex;
+    height: 100px;
+    /* border: 1px solid #FFBF74; */
+    justify-content: center;
+    align-items: center;
+}
+.order-button{
+    background-color: #FB983E;
+    color: white;
+    height: 84px;
+    width: 308px;
+    border-radius: 131px;
+    font-size: 37px;
+    font-weight: 800;
+    border: 1px solid #ff0000;
+    transition: all 0.3s ease;
+    cursor: pointer;/*update*/
+}
+
+.order-button:hover{
+    background-color: #ff0000;
+    color: white;
+    font-weight: bolder;
+}
+.main-hero{
+    width: 100%;
+}
+
+
+@media (max-width:998px) {
+    .tobejustifiedtocenter{
+        height: 70px;
+    }
+    .order-button{
+        height: 60px;
+        width: 200px;
+        border-radius: 68px;
+        font-size: 25px;
+        font-weight: 600;
+    }
+}
