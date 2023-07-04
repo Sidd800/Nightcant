@@ -14,6 +14,7 @@ const app = express();
 const foods = require("./routers/food-routes.js");
 const users = require("./routers/user-routes.js");
 
+app.use(express.json());
 app.use("/canteen/food", foods);
 app.use("/canteen/user", users);
 

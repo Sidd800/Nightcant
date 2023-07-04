@@ -17,15 +17,15 @@ const foodget = (req, res) => {
     });
 }
 
-const foodpost = async (req, res) => {
-    const newitem = await new Menu({
+const foodpost =  async (req, res) => {
+    const newitem =new Menu({
         name: req.body.name,
         category: req.body.category,
         price: req.body.price,
         id: req.body.id
     });
-    // console.log(req.body);
-    newitem.save();
+    console.log(req.body);
+    await newitem.save();
     console.log("saved");
 }
 

@@ -104,7 +104,7 @@ const handleSubmit=async(e)=>{
     })
     // const json=await response.json();
     
-    console.log("ERROR");
+    // console.log("ERROR");
 
     if(!response.ok){
         // setError(json.error)
@@ -116,6 +116,7 @@ const handleSubmit=async(e)=>{
         setPrice('');
         setCategory('');
         setError(null);
+        
         console.log("NEW STRING IS ADDED")
         // dispatch({type:'CREATE_WORKOUT',payload:json})
     }
