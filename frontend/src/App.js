@@ -7,6 +7,7 @@ import LoginPage from "./users/pages/login_page/loginPage";
 import MenuPage from "./users/pages/menu_page/menuPage";
 import Home from "./users/pages/home/Home";
 import AboutPage from "./users/pages/about_page/aboutPage";
+import UpdatePage from "./users/pages/services_page/servicesPage";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
   {
     path: "/about",
     element: <AboutPage />,
+  },
+  {
+    path: "/services",
+    element: <UpdatePage />,
   }
 ]);
 function App() {

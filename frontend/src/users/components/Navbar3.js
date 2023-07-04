@@ -24,7 +24,7 @@ export default function Navbar3() {
                     <a className='navbar-link' href='/about'><button className='link-button'>About</button></a>
                 </li>
                 <li className='without-bullet'>
-                    <a className='navbar-link' href='/'><button className='link-button'>Services</button></a>
+                    <a className='navbar-link' href='/services'><button className='link-button'>Services</button></a>
                 </li>
             </ul>
 

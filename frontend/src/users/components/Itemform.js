@@ -124,7 +124,7 @@ const handleSubmit=async(e)=>{
 
     return(
         <form className="create" onSubmit={handleSubmit}>
-            <h3>ADD A NEW WORKOUT</h3>
+            <h3>ADD A FOOD ITEM</h3>
             <label> NAME:</label>
             <input
             type="text"
