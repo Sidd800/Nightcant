@@ -1,0 +1,11 @@
+.btn:hover{
+    cursor: pointer;
+    border: 2px solid red;
+    color: red;
+}
+.btn:active
+{
+    border: 2px solid blue;
+    color: blue;
+
+}

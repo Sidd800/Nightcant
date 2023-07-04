@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.without-bullet{
+    list-style-type: none;
+}
+
+.main-nav{
+    width:100%;
+    height: 100px;
+    display:grid;
+    grid-template-columns: 100px 1fr 3fr 1fr 100px;
+    background-color: #F6CCB0;
+}
+
+.logo{
+    display: flex;
+    grid-column: 2/3;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.menu-link{
+    grid-column: 3/4;
+}
+
+.menu-link ul{
+    display: flex;
+    height: 100px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.login{
+    grid-column: 4/5;
+}
+.login ul{
+    display: flex;
+    height: 100px;
+    justify-content: flex-end;
+    align-items: center;
+    gap:50px;
+}
+.hamberger-menu{
+    
+    grid-column: 5/6;
+    
+}
+.hbm{
+    
+    display: flex;
+    height: 100px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.link-button{
+    padding: 10px;
+    height:45.74px;
+    width:93px;
+    border-radius: 79.2787px;
+    background-color: #F0A157;
+    color: white;
+    border: #F0A157;
+    margin: 5px;
+    transition: all ease 0.3s;
+    cursor: pointer;/*update*/
+}
+
+.link-button:hover{
+    background-color: red;
+    font-weight: 500;
+}
+.user-button{
+    padding:10px;
+    height:45.74px;
+    width: 93px;
+    border-radius: 79.2787px;
+    background-color: aliceblue;
+    border: #F0A157;
+    transition: all ease 0.3s;
+    cursor: pointer;/*update*/
+}
+
+.user-button:hover{
+    background-color: black;
+    color: white;
+    font-weight: 500;
+}
+
+.ofc{
+    background-color: #F6CCB0;
+}
+
+
+@media (max-width:1080px){
+    .main-nav{
+        height:80px;
+        grid-template-columns: 50px 1fr 3fr 1fr 50px;
+    }
+    .logo,.menu-link ul,.login ul{
+        height: 80px;
+    }
+    .link-button{
+        width: 90px;
+    }
+    .user-button{
+        width:90px;
+    }
+    
+    
+}
+@media (max-width:998px){
+    .main-nav{
+        height:80px;
+        grid-template-columns: 50px 1fr 3fr 1fr 50px;
+    }
+    .menu-link{
+        display: none;
+    }
+    .login{
+        display: none;
+    }
+    .logo{
+        grid-column: 3/4;
+    }
+}
+@media (min-width:999px){
+    .hbm{
+        display: none;
+    }
+}
+
+@media (min-width:999px){
+    .media{
+        display: none;
+    }
+}
